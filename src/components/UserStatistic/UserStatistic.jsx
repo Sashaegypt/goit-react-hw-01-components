@@ -23,3 +23,14 @@ export const UserStatistic = ({ title, stats }) => {
     </section>
   );
 };
+
+UserStatistic.propTypes = {
+  title: propTypes.string,
+  stats: propTypes.arrayOf(
+    propTypes.exact({
+      id: propTypes.string.isRequired,
+      label: propTypes.string.isRequired,
+      percentage: propTypes.number.isRequired,
+    })
+  ).isRequired,
+};
