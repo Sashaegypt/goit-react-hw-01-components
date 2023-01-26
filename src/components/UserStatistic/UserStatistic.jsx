@@ -1,22 +1,23 @@
 import { getRandomHexColor } from 'components/utils/getRandomHexColor'
 import propTypes from 'prop-types';
+import css from './UserStatistic.module.css'
 
 export const UserStatistic = ({ title, stats }) => {
   return (
-    <section className=''>
-      {title && <h2 className=''>{title}</h2>}
+    <section className={css.statistic}>
+      {title && <h2 className={css.title}>{title}</h2>}
 
-      <ul className=''>
+      <ul className={css.statistic_list}>
         {stats.map(stat => (
           <li
-            className=''
+            className={css.stats_items}
             key={stat.id}
             style={{
               backgroundColor: getRandomHexColor(),
             }}
           >
-            <span className=''>{stat.label}</span>
-            <span className=''>{stat.percentage}%</span>
+            <span className={css.label}>{stat.label}</span>
+            <span className={css.percentage}>{stat.percentage}%</span>
           </li>
         ))}
       </ul>

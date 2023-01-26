@@ -1,0 +1,35 @@
+.table {
+  width: 480px;
+  margin: 10px auto;
+
+  text-align: center;
+
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 10px 10px 10px 0 rgb(108, 108, 108);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.table__head{
+  padding: 10px 15px;
+
+  color: #fff;
+  background-color: #87CEFA;
+}
+
+.table th, td {
+    padding: 10px;
+    border: 1px solid #D3D3D3
+;
+}
+
+.table td{
+    text-transform: capitalize;
+}
+
+.bodyTable > tr:nth-child(even){
+    background-color: #F8F8FF;
+
+;
+}

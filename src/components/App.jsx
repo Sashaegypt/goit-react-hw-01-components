@@ -6,10 +6,11 @@ import { UserFriendsList } from 'components/UserFriendsList/UserFriendsList';
 import friends from 'data/data.json'
 import { UserTransaction } from 'components/UserTransactionHistory/UserTransaction';
 import transactions from 'data/transactions.json'
+
    
 export const App = () => {
   return (
-    <div className='userList'>
+    <div className=''>
       <UserProfile
        username={user.username}
         tag={user.tag}
