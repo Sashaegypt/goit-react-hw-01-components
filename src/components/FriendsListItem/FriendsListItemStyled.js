@@ -1,6 +1,6 @@
-import style from 'styled-components'
+import styled from 'styled-components';
 
-export const StatusStyled = style.span`
+export const StyledStatus = styled.span`
   background: ${props => (props.isOnline ? 'green' : 'red')};
   color: black;
   width: 15px;
