@@ -9,7 +9,9 @@ export const FriendsListItem = ({ avatar, name, isOnline }) => {
       <StyledStatus isOnline={isOnline}></StyledStatus>
       <img 
      src={avatar}
-     alt="Grapefruit slice atop a pile of other slices"/>
+        alt="Friends avatar"
+      width={48}
+      />
       <p className={css.name}>{name}</p>
     </li>
   );

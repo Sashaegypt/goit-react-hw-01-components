@@ -3,7 +3,7 @@ import user from 'data/user.json';
 import { UserStatistic } from 'components/UserStatistic/UserStatistic';
 import data from 'data/data.json'
 import { FriendsList } from 'components/FriendsList/FriendsList';
-import friends from 'data/data.json'
+import friends from 'data/friends.json'
 import { UserTransaction } from 'components/UserTransactionHistory/UserTransaction';
 import transactions from 'data/transactions.json'
 
