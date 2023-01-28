@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import { StyledStatus } from './FriendsListItemStyled';
 
 export const FriendsListItem = ({ avatar, name, isOnline }) => {
+  console.log("Hello world")
   return (
     <li className={css.item}>
       <StyledStatus isOnline={isOnline}></StyledStatus>
-      <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+      <img 
+     src={avatar}
+     alt="Grapefruit slice atop a pile of other slices"/>
       <p className={css.name}>{name}</p>
     </li>
   );
